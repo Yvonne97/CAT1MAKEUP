@@ -1,0 +1,57 @@
+package v.strathmore.com.sqlitelab;
+
+import java.lang.reflect.Constructor;
+
+/**
+ * Created by wainj on 19/10/2017.
+ */
+
+public class Contacts {
+
+    //private varaibles
+    int _id;
+    String _name;
+    String _phone_number;
+
+    //constructors initalise variables of a class
+    public Contacts(){
+    }
+//read operation
+    public Contacts(int id, String name, String _phone_number){
+        this._id = id;
+        this._name = name;
+        this._phone_number = _phone_number;
+    }
+//write operation
+    public Contacts (String name, String _phone_number){
+        this._name = name;
+        this._phone_number = _phone_number;
+    }
+
+    //getting ID
+
+    public int getID ()  {
+        return this._id;
+    }
+
+
+    public void setID(int id) {
+        this._id = id;
+    }
+
+    public String getName() {
+        return this._name;
+    }
+
+    public void setName(String name) {
+        this._name = name;
+    }
+
+    public String getPhoneNumber() {
+        return this._phone_number;
+    }
+
+    public void setPhoneNumber(String phone_number) {
+        this._phone_number = phone_number;
+    }
+}
